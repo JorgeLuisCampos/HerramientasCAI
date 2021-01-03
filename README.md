@@ -1,11 +1,11 @@
 # HerramientasCAI
 Algunas herramientas para trabajar con Acceso Fácil y que son de tipo público
 
-Repositorio Original de Archivos:
+## Repositorio Original de Archivos:
 https://mega.nz/folder/5X4ClAKa#OJpJWwKrYDy2PoRAfosFtQ
 
 
-Estos son los videos que hemos visto hasta el día de hoy:
+## Estos son los videos que hemos visto hasta el día de hoy:
 
 Ligas para cursos sabatinos de ACCESO FÁCIL:
 16/11/2020 Sesión 1 Como usar Python y caso práctico para crear Botón que hace Botones
@@ -25,3 +25,6 @@ https://transcripts.gotomeeting.com/#/s/6fc63ac37ab7e642acbd814cefc38073aa6e21d3
 
 19/12/2020 Sesión 6 *Análisis del uso de Tablas de Datos y Como generar Funciones propias*
 https://transcripts.gotomeeting.com/#/s/0d3e90c7a22f8f7d794ea28ec65e9720f2b59d029c3b93bf3f99b2dba58d6d86
+
+## Liga a este repositorio:
+http://bit.ly/GITHub_HerramientasCAI
