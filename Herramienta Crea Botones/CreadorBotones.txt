@@ -1,18 +1,20 @@
-1 - Crear/Obtener Pestaña:
+1 - Crear/Obtener PestaÃ±a:
+
+import clr
+clr.AddReference('System.Windows.Forms')
+from System.Windows.Forms import MessageBox
 
 Conexion = gl['conn']
 tbsTab = Conexion.TablaBase('engRibbonTab')
 
-selTab = tbsTab.Selecciona()
-selTab.Donde('ModuleID', 0)
-selTab.YTambien('TabCaption', '{[cPestana]}')
+selTab = tbsTab.Selecciona() 					# Equivalente a: <-- Select * from enrRibbonTab -->
+selTab.Donde('ModuleID', 0)  					# Equivalente a: <-- Where ModuleId = 0 -->
+selTab.YTambien('TabCaption', '{[cPestana]}')	# Equivalente a: <-- AND TabCaption = cPestana -->
 
-if selTab.HayResultados():
-	
+if selTab.HayResultados():	
 	gl['RibbonTabID'] = selTab.Tabla().Rows[0]['RibbonTabID']
 else:
-
-	agrTab = tbsTab.Añade()
+	agrTab = tbsTab.AÃ±ade()
 	
 	agrTab.Asignar('RibbonTabIDBase', 0)
 	agrTab.Asignar('ProductID', 1)
@@ -21,6 +23,8 @@ else:
 	
 	agrTab.Ejecutar()
 	gl['RibbonTabID'] = tbsTab.UltimoID('RibbonTabID')
+
+# MessageBox.Show(str(gl['RibbonTabID']))
 
 2. Crear/Obtener Grupo:
 
@@ -31,12 +35,10 @@ selTab = tbsTab.Selecciona()
 selTab.Donde('RibbonTabID', gl['RibbonTabID'])
 selTab.YTambien('GroupCaption', '{[cGrupo]}')
 
-if selTab.HayResultados():
-	
+if selTab.HayResultados():	
 	gl['RibbonGroupID'] = selTab.Tabla().Rows[0]['RibbonGroupID']
 else:
-
-	agrGpo = tbsTab.Añade()
+	agrGpo = tbsTab.AÃ±ade()
 	
 	agrGpo.Asignar('RibbonGroupIDBase', 0)
 	agrGpo.Asignar('RibbonTabID', gl['RibbonTabID'])
@@ -46,7 +48,9 @@ else:
 	agrGpo.Ejecutar()
 	gl['RibbonGroupID'] = tbsTab.UltimoID('RibbonGroupID')
 
-3. Crear Menú:
+
+
+3. Crear MenÃº:
 
 clr.AddReference('System.Windows.Forms')
 from System.Windows.Forms import MessageBox
@@ -55,7 +59,7 @@ Conexion = gl['conn']
 tbsCtl = Conexion.TablaBase('engRibbonControl')
 tbsMnu = Conexion.TablaBase('engRibbonMenu')
 
-ctlAgr = tbsCtl.Añade()
+ctlAgr = tbsCtl.AÃ±ade()
 
 ctlAgr.Asignar('ControlIDBase', 0)
 ctlAgr.Asignar('ProductID', 0)
@@ -63,25 +67,28 @@ ctlAgr.Asignar('ModuleID', 0)
 ctlAgr.Asignar('ControlCaption', '{[cNombre]}')
 ctlAgr.Asignar('ControlExecute', 'AccesoFacil.{[cAppKey]}')
 ctlAgr.Asignar('IconFile', '{[cIcono]}')
+ctlAgr.Asignar('SystemButtonOrder', '{[cOrden]}')	# Para agregar el orden
 
 ctlAgr.Ejecutar()
 ControlID = tbsCtl.UltimoID('ControlID')
 
 ModuleID = clsMain.Aplicacion.clsMainInstance.ModuleID
 	
-mnuAgr = tbsMnu.Añade()
+mnuAgr = tbsMnu.AÃ±ade()
 
 mnuAgr.Asignar('RibbonGroupID', gl['RibbonGroupID'])
 mnuAgr.Asignar('ControlID', ControlID)
 mnuAgr.Asignar('ControlType', 1)
 mnuAgr.Asignar('ExtraMenuModuleID', ModuleID)
+mnuAgr.asignar('ControlOrder', '{[cOrden]}')		# Para agregar el orden
 
 mnuAgr.Ejecutar()
 
-mje = "{0} se creo en el grupo: {1}, pestaña {2}.".format(
+mensaje = "{0} se creo en el grupo: {1}, pestaÃ±a {2}.".format(
 	'{[cNombre]}',
 	'{[cGrupo]}',
 	'{[cPestana]}'
 )
 
-MessageBox.Show(mje)
+MessageBox.Show(mensaje)
+

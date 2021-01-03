@@ -1,0 +1,86 @@
+### Creador de Botones
+
+Crear un botón con las siguientes características:
+
+Nombre: Crear Herramienta
+Ejecutar: AccesoFacil.CrearHerramienta
+Icono: Configuration32.Ico
+Descripción: Crea Herramientas para usar con Acceso Fácil
+ModuleID: (Limpiar, para que el valor quede en blanco y aparezca en todos los módulos)
+
+Dar clic en Aceptar y volver a ingresar con el usuario Admin al sistema
+
+Hacer clic en el botón y con la herramienta de Acceso Fácil, configurar lo siguiente:
+
+### Tablas Datos
+Nombre: Pestañas
+Consulta/Archivo: engRibbonTab
+MenuID: RibbonTabID
+Menu: TabCaption
+Filtro: ModuleID = 0
+
+### Parámetros
+No se usa
+
+### Controles
+Pos: 1
+Título: Pestana
+Tipo: Lista
+Estilo: Normal
+Lista: Pestañas
+
+Pos: 2
+Título: Grupo
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+Pos: 3
+Título: Nombre
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+Pos: 4
+Título: Ejecutar
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+Pos: 5
+Título: Icono
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+Pos: 6
+Título: Orden
+Tipo: Texto
+Estilo: Normal
+Lista:
+
+
+### Funciones
+
+Pestaña:
+Orden: 1
+Nombre: Crear/Obtener Pestaña
+Evento: Al guardar
+Una Vez: Sí
+Tipo: Script Python
+
+Grupo:
+Orden: 2
+Nombre: Crear/Obtener Grupo
+Evento: Al guardar
+Una Vez: Sí
+Tipo: Script Python
+
+Menú:
+Orden: 3
+Nombre: Crear Menú
+Evento: Al guardar
+Una Vez: Sí
+Tipo: Script Python
+
+# El código de cada función está en el archivo: CreadorBotones.txt
