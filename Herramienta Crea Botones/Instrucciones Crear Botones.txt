@@ -1,4 +1,6 @@
 ### Creador de Botones
+Video: https://attendee.gotowebinar.com/recording/4527656253292625672
+
 
 Crear un botón con las siguientes características:
 

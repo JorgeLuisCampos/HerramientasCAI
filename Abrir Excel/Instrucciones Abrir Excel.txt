@@ -1,0 +1,15 @@
+### Abrir Archivo de Excel
+Video: https://attendee.gotowebinar.com/recording/4527656253292625672
+
+1. Crear el botón de Excel para Acceso Fácil en el módulo deseado
+    (se puede usar la Herramienta para Crear Botones)
+
+2. Funciones
+
+Orden: 1
+Nombre: Crear/Obtener Pestaña
+Evento: Al guardar
+Una Vez: Sí
+Tipo: Script Python
+
+# El código de la función está en el archivo: Excel.py
