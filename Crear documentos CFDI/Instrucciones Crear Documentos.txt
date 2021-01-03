@@ -1,0 +1,20 @@
+Para crear documentos que se van a timbrar
+
+En el caso, por ejemplo de usar consultas de datos provenientes de otros sistemas, 
+    es posible crear consultas que inserten datos en las tablas de Comercial Pro.
+    
+1. Insertar datos del encabezado en docDocument
+2. Insertar datos del detalle en docDocumentItem
+3. Insertar datos del CFDI en docDocumentCFD 
+    (para el Uso de CFDI, Método de Pago y Forma de Pago)
+4. Insertar datos del vencimiento del documento (crédito) en docDocumentPaymentAgenda
+    (con la fecha del vencimiento, porcentaje 100% y el monto o total del documento, 
+     o de acuerdo al tipo de crédito otorgado)
+
+
+Datos: Se puede usar una tabla o consulta para obtener datos alternos a la vista, el nombre deber ser "Datos", 
+    tener el nombre de la vista y un campo llave.
+
+Un solo registro: en Parámetros, hay una oción llamada "Un solo registro" que valida que el usuario seleccione 
+    sólo un registro al momento de hacer clic en un botón de Acceso Fácil
+

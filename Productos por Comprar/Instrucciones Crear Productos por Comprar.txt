@@ -1,0 +1,77 @@
+### Crear botón para crear lista de Productos por comprar a partir de un pedido
+Video: https://transcripts.gotomeeting.com/#/s/0d3e90c7a22f8f7d794ea28ec65e9720f2b59d029c3b93bf3f99b2dba58d6d86
+
+Crear botón con las siguientes características:
+
+Nombre: Comprar
+Ejecutar: AccesoFacil.ProductosPorComprar
+Icono: Document.ico
+Descripción: Permite seleccionar productos de un pedido para convertirlos en productos por comprar
+ModuleID: (El módulo correspondiente a los pedidos)
+
+Dar clic en Aceptar y volver a ingresar con el usuario Admin al sistema
+
+Hacer clic en el botón y con la herramienta de Acceso Fácil, configurar lo siguiente:
+
+### Tablas Datos
+Nombre: Datos
+Consulta/Archivo: vwDocumentoPedido
+Campo Llave: DocumentID
+Menu: 
+Filtro: 
+
+### Parámetros
+Parámetro: Campo ItemID
+Valor: DocumentItemID
+
+Parámetro: Permitir eliminar filas.
+Valor: 1 
+
+### Controles
+Pos: 1
+Título: Titulo
+Tipo: Texto
+Estilo: Normal
+Ancho: 300
+Det.: No
+
+Pos: 2
+Título: Cantidad    --> el nombre debe coincidir con el dato que viene en la consulta
+Tipo: Texto
+Estilo: Normal      --> deseamos que el usuario pueda modificar la cantidad
+Ancho: 70
+Det.: Sí
+
+Pos: 3
+Título: Producto    --> el nombre debe coincidir con el dato que viene en la consulta
+Tipo: Texto
+Estilo: Restringido --> deseamos que el usuario no lo modifique
+Ancho: 100
+Det.: Sí
+
+Pos: 4
+Título: Precio Unitario     --> el nombre debe coincidir con el dato que viene en la consulta
+Tipo: Texto
+Estilo: Restringido
+Ancho: 100
+Det.: Sí
+
+
+### Funciones
+
+Crear "Productos por Comprar":
+Orden: 1
+Nombre: Crear partidas
+Evento: Al guardar
+Una Vez: No
+Tipo: InstrucciónSQL
+
+# El código de cada función está en el archivo: Query Comrpas.sql
+
+
+Observaciones:
+    Cabe aclarar que este procedimiento crea elementos en docDocumentItem sin padre (docDocument), 
+    Se debe controlar que este tipo de elementos, deben ser controlados sólo de esa manera, o en
+    su defecto, se puede crear una tabla igual a docDocumentItem en la que se controloen todos los 
+    productos que estñán por comprarse hasta que se cree el documento padre y moverse a la tabla
+    correspondiente, por ejemplo. La solución indicada dependerá de las necesidades del proyecto.  
