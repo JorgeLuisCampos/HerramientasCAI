@@ -8,6 +8,7 @@ https://mega.nz/folder/5X4ClAKa#OJpJWwKrYDy2PoRAfosFtQ
 ## Estos son los videos que hemos visto hasta el día de hoy:
 
 Ligas para cursos sabatinos de ACCESO FÁCIL:
+
 16/11/2020 Sesión 1 Como usar Python y caso práctico para crear Botón que hace Botones
 https://attendee.gotowebinar.com/recording/4527656253292625672
 
