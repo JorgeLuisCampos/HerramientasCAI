@@ -1,0 +1,18 @@
+Orden:
+1
+
+Nombre:
+DescartarSelecciónNoValida
+
+Evento:
+Al Guardar // Una Vez
+
+Tipo:
+Script Python
+
+Descripción:
+Aborta la ejecución y envía mensaje de error si la selección contiene mas de un proveedor
+
+Script:
+if gl['MasDeUnProveedor'] == 1:
+	raise Exception('No se permite mas de un proveedor en la selección.')

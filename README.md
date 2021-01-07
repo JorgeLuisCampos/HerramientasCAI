@@ -27,5 +27,8 @@ https://transcripts.gotomeeting.com/#/s/6fc63ac37ab7e642acbd814cefc38073aa6e21d3
 19/12/2020 Sesión 6 *Análisis del uso de Tablas de Datos y Como generar Funciones propias*
 https://transcripts.gotomeeting.com/#/s/0d3e90c7a22f8f7d794ea28ec65e9720f2b59d029c3b93bf3f99b2dba58d6d86
 
+05/01/2021 Sesión Express * Cómo acceder a la información de los elementos seleccionados antes de procesarlos*
+https://transcripts.gotomeeting.com/#/s/f222c401d308983d8afab3648d73f7cde0df1bfce9f2710a735b4d80e70f3214
+
 ## Liga a este repositorio:
 http://bit.ly/GITHub_HerramientasCAI
