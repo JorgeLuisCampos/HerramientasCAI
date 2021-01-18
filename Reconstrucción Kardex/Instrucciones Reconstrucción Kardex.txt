@@ -1,0 +1,32 @@
+### Crear botón para reconstruir el KArdex de un producto
+Video: 
+
+En el módulo de Productos, Crear botón con las siguientes características:
+
+Nombre: Reconstruir Kardex
+Ejecutar: AccesoFacil.ReconstruirInventario
+Icono: agenda.ico
+Descripción: Reconstruye el inventario (kardex) de los productos seleccionados
+ModuleID: (El módulo correspondiente a los Productos)
+
+Dar clic en Aceptar y volver a ingresar con el usuario Admin al sistema
+
+Hacer clic en el botón y con la herramienta de Acceso Fácil, configurar lo siguiente:
+
+
+### Funciones
+
+Crear "Reconstruir Kardex":
+Orden: 1
+Nombre: Reconstruir Kardex
+Evento: Al guardar
+Una Vez: No
+Tipo: Procedimiento Almacenado
+Script: zRTRECALCULOINV
+
+# El código de cada función está en el archivo: RecalculoDeKardexBásicoPorProducto.sql
+
+
+Observaciones:
+    Cabe aclarar que este procedimiento hace el recálculo tomando en cuenta una 
+    unidad de medida básica, no maneja conversión de unidades y tampoco controla pedimentos.  

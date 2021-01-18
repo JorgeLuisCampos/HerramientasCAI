@@ -33,5 +33,13 @@ https://transcripts.gotomeeting.com/#/s/f222c401d308983d8afab3648d73f7cde0df1bfc
 09/01/2021 Sesión 7 *Introducción a Acceso Fácil*
 https://transcripts.gotomeeting.com/#/s/5aeb434a1241b4085f9a53a2550f2b6b350419d07945df0ec9c46e1f252fe647
 
+16/01/2021 Sesión 8 *Licenciamiento de Acceso Fácil, Manejo de Inventarios, Reconstrucción de Kardex*
+https://transcripts.gotomeeting.com/#/s/022fa54a560b463244b5753e12ff304d4076e6a6c5465e02d46cd26ced9a63f9
+
+
 ## Liga a este repositorio:
 http://bit.ly/GITHub_HerramientasCAI
+
+
+## Curso Acceso Fácil Sabatino
+https://www.gotomeet.me/VersionTI-JorgeLuis/curso-acceso-facil-sabatino
