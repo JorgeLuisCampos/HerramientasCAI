@@ -36,6 +36,8 @@ https://transcripts.gotomeeting.com/#/s/5aeb434a1241b4085f9a53a2550f2b6b350419d0
 16/01/2021 Sesión 8 *Licenciamiento de Acceso Fácil, Manejo de Inventarios, Reconstrucción de Kardex*
 https://transcripts.gotomeeting.com/#/s/022fa54a560b463244b5753e12ff304d4076e6a6c5465e02d46cd26ced9a63f9
 
+23/01/2021 Sesión 9 *Manejo de Costo Fiscal y Costo Comercial en Comercial Pro*
+https://transcripts.gotomeeting.com/#/s/6b783a5bc71d723ad390e95e635dd576585409c9b3eae44b9c2a314062de7369
 
 ## Liga a este repositorio:
 http://bit.ly/GITHub_HerramientasCAI
