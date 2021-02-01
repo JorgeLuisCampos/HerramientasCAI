@@ -39,6 +39,9 @@ https://transcripts.gotomeeting.com/#/s/022fa54a560b463244b5753e12ff304d4076e6a6
 23/01/2021 Sesión 9 *Manejo de Costo Fiscal y Costo Comercial en Comercial Pro*
 Grabando...
 
+30/01/2021 Sesión 10 *Produce Más, Plugin para manejo de Producción con CONTPAQi Comercial Pro*
+https://transcripts.gotomeeting.com/#/s/47383801f81eaa7d4f3ae9cee4f52b8d608993ca239468369835c7fe26a8c3ba
+
 ## Liga a este repositorio:
 http://bit.ly/GITHub_HerramientasCAI
 
