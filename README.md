@@ -42,6 +42,9 @@ Grabando...
 30/01/2021 Sesión 10 *Produce Más, Plugin para manejo de Producción con CONTPAQi Comercial Pro*
 https://transcripts.gotomeeting.com/#/s/47383801f81eaa7d4f3ae9cee4f52b8d608993ca239468369835c7fe26a8c3ba
 
+06/02/2021 Sesión 11 *Módulo Fiscal*
+https://transcripts.gotomeeting.com/#/s/74ea06de2f5a128641b5bb474cde32728faefcb35eb252dcfe45c0c1fb0eeb1b
+
 ## Liga a este repositorio:
 http://bit.ly/GITHub_HerramientasCAI
 
