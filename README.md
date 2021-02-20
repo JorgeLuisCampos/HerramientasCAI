@@ -48,6 +48,9 @@ https://transcripts.gotomeeting.com/#/s/74ea06de2f5a128641b5bb474cde32728faefcb3
 13/02/2021 Sesión 12 *Generación y apertura de documentos a partir de uno base*
 https://transcripts.gotomeeting.com/#/s/c199d1674d1205714343a8f4cc2d1d4cd0b834d241c9284dde1afef15b064bbb
 
+20/02/2021 Sesión 13 *Estados de Cuenta y Movimientos Bancarios*
+https://transcripts.gotomeeting.com/#/s/8bdc5807458481b16b769577895e9fcb1a9224f3c1e7d8df2d033d07faa4d270
+
 ## Liga a este repositorio:
 http://bit.ly/GITHub_HerramientasCAI
 
