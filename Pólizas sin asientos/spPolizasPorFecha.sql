@@ -20,7 +20,7 @@ BEGIN
     -- @UNP Ultimo Numero de Póliza, @FECHP, @REF AñoPeriodoTipoPolizaDivisa  AAAA0P0TD
     SELECT @UNP=UltNoPol FROM zRTULTNUMPOL WHERE Tipo=3 AND Ejercicio=YEAR(@4) AND Periodo=MONTH(@4)
     SET @UNP=ISNULL(@UNP,0)+1
-    SET @REF= LTRIM(FORMAT(@4,'yyyyMMdd'))+'03'+CONVERT(NVARCHAR(1),@6)
+    SET @REF= dbo.fnObtenerReference (@4, 3, @6)
     SELECT @PID=polizaID FROM accpoliza WHERE Reference=@REF
     -- Inserta encabezado de Poliza
     IF NOT EXISTS (SELECT * FROM accPoliza WHERE Reference=@REF AND DeletedOn IS NULL) BEGIN
