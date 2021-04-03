@@ -1,0 +1,61 @@
+### Enchúlame el botón
+
+
+Crear un botón con las siguientes características:
+(Se puede usar la herramienta para Crear Botones)
+
+Nombre: Renombra Botón
+Ejecutar: AccesoFacil.RenombraBoton
+Icono: AccountingAffectation.ico
+Descripción: Renombra, cambia el icono, la descripción y la función que ejecuta un botón
+ModuleID: En una consulta que muestre todos los botones del sistema: engRibbonControl
+
+Dar clic en Aceptar y volver a ingresar con el usuario Admin al sistema
+
+Hacer clic en el botón y con la herramienta de Acceso Fácil, configurar lo siguiente:
+
+### Tablas Datos
+Nombre: Datos
+Consulta/Archivo: engRibbonControl
+Campo Llave: ControlID
+Menu: 
+Filtro:
+
+### Parámetros
+Un solo registro: 1
+
+### Controles
+Pos: 1
+Título: ControlCaption
+Tipo: Texto
+Estilo: Normal
+
+Pos: 2
+Título: ControlDescription
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+Pos: 3
+Título: ControlExecute
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+Pos: 4
+Título: IconFile
+Tipo: Texto
+Estilo: Normal
+Lista: 
+
+### Funciones
+
+Renombra Botón:
+Orden: 1
+Nombre: Renombra Botón
+Evento: Al guardar
+Una Vez: Sí
+Tipo: Instrucción SQL
+Código: 
+        Exec _VTI_spRenombraBoton {pID}, '{cControlCaption}', '{cControlDescription}',
+			'{cControlExecute}', '{cIconFile}'

@@ -25,4 +25,4 @@ except Exception as ex:
     MessageBox.Show("Ocurrió un error al ejecutar la instrucción")
     MessageBox.show(str(ex))
 finally:
-    Conexion.Close()∫
+    Conexion.Close()
