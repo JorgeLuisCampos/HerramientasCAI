@@ -1,0 +1,13 @@
+Tabla:
+
+Nombre: Productos
+Consulta/Archivo: orgProduct
+MenuID: ProductID
+Menu: ProductName
+
+Control:
+
+Titulo: Producto
+Tipo: Lista
+Lista: Productos
+Ancho: 250
